@@ -142,7 +142,6 @@ function esImpar(num) {
     return true;
   }
 }
-}
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
@@ -278,10 +277,10 @@ function esVocal(letra){
   else if (letra===i){
     console.log ("Es vocal");
   }
-  else if(letra===o);
+  else if(letra===o){
   console.log("Es vocal");
   }
-  else if(letra===o);
+  else if(letra===o){
   console.log("Es vocal");
   }
   else{
