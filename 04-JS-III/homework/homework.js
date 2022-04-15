@@ -26,10 +26,11 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  var nuevoarray = []
   for (var i=0 ; i < array.lenght ; i++){
-    array[i] = array[i]+1;
+    nuevoarray.push(array[i]+1);
   }
-  return array;
+  return nuevoarray;
 }
 
 
@@ -58,11 +59,13 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  while (palabras.lenght>0){
-    var textoFinal = "" + palabra.shift();
-    return textoFinal
+  var frase = ""
+  for(i=0 ; i<palabras.length ; i++){
+    frase = frase + palabras[i] + " "
   }
+  return frase;
 }
+
 
 
 function arrayContiene(array, elemento) {
@@ -82,7 +85,7 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
-    while (numero.lenght>0){
+    while (numeros.lenght>0){
       var numeroFinal =  numeroFinal+ numeros.shift();
       return numeroFinal;
   }
@@ -98,7 +101,7 @@ function promedioResultadosTest(resultadosTest) {
       sum= sum + resultadosTest[i];
   }
   var promedio = sum / resultadosTest.length;
-  return console.log(promedio);
+  return promedio;
 }
 
 

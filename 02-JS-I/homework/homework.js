@@ -147,14 +147,14 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
- valor = Math.elevarAlCuadrado(num);
+ var valor = Math.pow(num,2);
   return valor;
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  valor = Math.elevarAlCubo(num);
+  var valor = Math.pow(num,3);
   return valor;
 }
 
@@ -189,19 +189,18 @@ function numeroRandom() {
 }
 
 function esPositivo(numero) {
-  //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo. 
+  //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número 
+  //es positivo o negativo. 
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if (numero>0){
-    return console.log("Es positivo");
+  if (numero>0 && numero!==0){
+    return "Es positivo";
   }
-  else if (nuemro < 0){
-    return console.log("Es negativo");
+  else if(numero < 0){
+    return "Es negativo";
   }
-  else{
-    return falso;
-  }
+  return false;
 }
 
 function agregarSimboloExclamacion(str) {
@@ -216,15 +215,15 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  nombre_apellido = nombre + "" + apellido;
-  return nombre_apellido;
+  return nombre + " " + apellido;
+  
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  saludo = "Hola "+ nombre;
+  saludo = "Hola "+ nombre+"!";
   return saludo;
 }
 
@@ -268,23 +267,11 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
 
-  if (letra===a){
-    console.log ("Es vocal");
-  }
-  else if(letra===e){
-  console.log();
-  }
-  else if (letra===i){
-    console.log ("Es vocal");
-  }
-  else if(letra===o){
-  console.log("Es vocal");
-  }
-  else if(letra===o){
-  console.log("Es vocal");
+  if (letra==="a" || letra==="e"||letra==="i"||letra==="o"||letra==="u"){
+    return "Es vocal";
   }
   else{
-    console.log("Dato incorrecto")
+    return "Dato incorrecto";
   }
 }
 
