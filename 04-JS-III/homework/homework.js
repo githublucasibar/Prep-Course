@@ -26,9 +26,9 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  var nuevoarray = []
-  for (var i=0 ; i < array.lenght ; i++){
-    nuevoarray.push(array[i]+1);
+  var nuevoarray = [];
+  for (var i=0 ; i < array.length ; i++){
+    nuevoarray[i] = array[i]+1 ;
   }
   return nuevoarray;
 }
@@ -59,9 +59,10 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  var frase = ""
-  for(i=0 ; i<palabras.length ; i++){
-    frase = frase + palabras[i] + " "
+  var frase = palabras[0]
+  
+  for(i=1 ; i<palabras.length ; i++){
+    frase = frase+ " " + palabras[i] 
   }
   return frase;
 }
@@ -85,10 +86,11 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
-    while (numeros.lenght>0){
-      var numeroFinal =  numeroFinal+ numeros.shift();
-      return numeroFinal;
+  var suma = 0;
+  for (i=0;i<numeros.length;i++){
+    suma =suma + numeros[i];
   }
+  return suma
 }
 
 
@@ -97,7 +99,7 @@ function promedioResultadosTest(resultadosTest) {
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
   var sum = 0;
-  for (var i=0 ; i < resultadosTest.lenght ; i++){
+  for (var i=0 ; i < resultadosTest.length ; i++){
       sum= sum + resultadosTest[i];
   }
   var promedio = sum / resultadosTest.length;
@@ -109,15 +111,12 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
-  var May = 0
-  for (i=0 ; i<numeros.length ; i++){
-    if (numeros[i]>numeros[i+1]){
-      May=numeros[i];
-    }else{
-      May=numeros[i+1];
-    }
+  var mayor = numeros[0];
+  for (var i=1 ; i<numeros.length ; i++){
+    if (numeros[i]> mayor){
+      mayor=numeros[i];
   }
-  return May;
+  return mayor;
 }
 
 
