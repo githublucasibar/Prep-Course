@@ -1,17 +1,15 @@
-En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes 
-conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará
- a descubrir rápidamente cualquier agujero en tu comprensión.
-
-Variables: las variables son un espacio en la memoria que se reserva para guardar determinado dato. 
+Variables: las variables son un espacio en la memoria que se reserva para guardar determinado dato 
+que puede ir modificandose o no a medida que corre el programa. 
 
 Strings: son datos que se poenen entre comillas y que son utilizados como textos, ya tenga numero o 
 signos, todo se toma como parte de un bloque de texto.
 
 Funciones (argumentos, `return`): Las funciones son elavoraciones del programador para generar una interaccion 
-entre los distintos datos de un programa. Los datos que tineen que interactuar en una funcion son ingresados
-a traves de los argumentos, estos tienen cierto proceso y luego se devuelve un resultado con la palabra clave return
+entre los distintos datos de un programa. Los datos que van a interactuar en una funcion son ingresados
+a traves de los argumentos, estos tienen cierto proceso y luego se devuelve un resultado con la palabra 
+clave return.
 
-Declaraciones `if`: una funcion declarativa compara usando operadores de comparacion (mayor, menor, igual o 
+Declaraciones `if`: es una funcion que compara usando operadores de comparacion (mayor, menor, igual o 
 diferente, con sus distintas combinaciones). Con esta comparacion se genera un tipo de dato booleano con el cual
 si se determina true se efectua cierto codigo y si es false sigue si curso el programa.
 
