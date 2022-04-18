@@ -10,6 +10,11 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+  var matrizFinal= []
+  for( var clave in objeto){
+    matrizFinal.push([clave, objeto[clave]]);
+  }
+  return matrizFinal
 }
 
 
