@@ -19,9 +19,11 @@ function deObjetoAmatriz(objeto){
 
 
 function numberOfCharacters(string) {
-  //La función recibe un string. Recorre el srting y devuelve el caracter con el número de veces que aparece 
+  //La función recibe un string. Recorre el srting y devuelve el caracter con el número de veces que 
+  //aparece 
   //en formato par clave-valor.
-  //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
+  //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> 
+  //{ a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
 }
 
@@ -31,6 +33,19 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+// 
+
+// var  reconstruccion = []
+//   for(i=0; i<s.length ; i++){
+//     if ( i === i.toLowerCase()){
+//       reconstruccion.push(i)
+//     }
+//     var minusculas =[]
+//     minuscula.push(i)
+
+//  } 
+//  return reconstruccion + minusculas
+
 }
 
 
